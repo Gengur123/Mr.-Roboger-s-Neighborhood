@@ -77,7 +77,7 @@ function numberConverter(numberInput) {
   }
 expected output: [ "0","1","2","3"]
 
-Test: "It should compare numbers in array and return true or false"(Has bugs?)
+Test: "It should compare numbers in array and return true or false"()
 Input = 3
 Code: 
   function numberConverter(numberInput) {
