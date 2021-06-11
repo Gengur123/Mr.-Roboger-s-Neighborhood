@@ -6,19 +6,21 @@ function numberConverter(numberInput) {
     array.push(indexToString)
     }
     console.log(array)
-    const roboArray = array.map (function(string) {
-      if  (string.includes("3")) {
-        return true;
-      } else if (string.includes("2")) {
-        return true;
-      } else if (string.includes("1")) {
-        return true;
+    const robotArray = array.map (function(string) {
+      if  (string.includes("3") === true) {
+        return string = "Won't you be my neighbor?";
+      } else if (string.includes("2") === true) {
+        return string = "Boop";
+      } else if (string.includes("1") === true) {
+        return string = "Beep";
       } else {
-        return false;
+        return string;
       }
-      console.log(roboArray)
-
     });
+    console.log(robotArray)
+    const robotString = robotArray.join(", ");
+    return robotString
+    console.log(robotString)
 }
 //UI Logic
 
@@ -26,7 +28,7 @@ $(document).ready(function(){
   $("form#number-converter").submit(function(event){
     event.preventDefault();
     const numberInput = $("input#number").val();
-    $("#output").html(numberInput);
     numberConverter(numberInput);
+    $("#output").html(robotString);
   });
 });
