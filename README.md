@@ -1,6 +1,6 @@
 # _Arthur Lee's Mr. Robogers Website_
 
-#### _A simple portfolio website about Arthur Lee_
+#### _A simple robot website_
 
 #### By _**Arthur Lee**_
 
