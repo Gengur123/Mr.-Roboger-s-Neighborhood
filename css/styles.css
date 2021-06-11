@@ -9,12 +9,3 @@ body {
 img {
   border-radius: 90%;
 }
-div {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: -2s;
-}
