@@ -1,3 +1,4 @@
+//Business
 
 function numberConverter(numberInput) {
   array = []
