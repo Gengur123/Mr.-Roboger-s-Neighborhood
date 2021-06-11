@@ -40,7 +40,66 @@ _Arthur Lee [meleearthur@gmail.com](meleearthur@gmail.com)_
 
 Describe: numberToWordConverter()
 
-Test: "It should loop through all numbers in a range of 0 to that user inputs"
+Test: "It should loop through all numbers in a range to that user inputs"
+Input = 3
+Code: 
+function numberConverter(numberInput) {
+  array = []
+  for (let index =1; index <=numberInput; index +=1){
+    array.push(index)
+    console.log(array)
+  }
+  }
+expected output: [ 1,2,3]
+
+Test: "It should loop through all numbers starting at 0 to a range user inputs."
+Input = 3
 Code:
-input = 3
-expected output: [1,2,3]
+function numberConverter(numberInput) {
+  array = []
+  for (let index =0; index <=numberInput; index +=1){
+    array.push(index)
+    console.log(array)
+  }
+  }
+Expected output: [ 0,1,2,3]
+
+Test: "It should make all intergers into a string to have .include later."
+Input = 3
+Code:
+function numberConverter(numberInput) {
+  array = []
+  for (let index =1; index <=numberInput; index +=1){
+    let indexToString = index + ""
+    array.push(indexToString)
+    console.log(array)
+  }
+  }
+expected output: [ "0","1","2","3"]
+
+Test: "It should compare numbers in array and return true or false"(Has bugs?)
+Input = 3
+Code: 
+  function numberConverter(numberInput) {
+  array = []
+  for (let index =0; index <=numberInput; index +=1){
+    let indexToString = index + ""
+    array.push(indexToString)
+    }
+    console.log(array)
+    const roboArray = array.map (function(string) {
+      if  (string.includes("3")) {
+        return true;
+      } else if (string.includes("2")) {
+        return true;
+      } else if (string.includes("1")) {
+        return true;
+      } else {
+        return false;
+      }
+      console.log(roboArray)
+
+    });
+}
+
+Expected output: [ false, true, true, true]
